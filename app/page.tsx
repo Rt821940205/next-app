@@ -6,5 +6,5 @@ export const metadata: Metadata = {
   title: "Home",
 };
 export default function Home() {
-  return <Hero src={ajpg} alt="Home" content="汤帅" />;
+  return <Hero src={ajpg} alt="Home" content="汤神" />;
 }
