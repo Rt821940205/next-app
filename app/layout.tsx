@@ -27,10 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="relative">
-          <Header />
-          {children}
-        </div>
+        <Header />
+        {children}
       </body>
     </html>
   );
