@@ -12,7 +12,7 @@ const linkData = [
 export default function Header() {
   const pathName = usePathname();
   return (
-    <div className="w-full absolute">
+    <div className="w-full absolute z-10">
       <div className=" flex justify-between container mx-auto items-center text-white p-8">
         <Link className="text-3xl font-bold" href={"/"}>
           Home
