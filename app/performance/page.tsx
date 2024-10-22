@@ -1,16 +1,5 @@
-import Image from "next/image";
 import bjpg from "@/public/b.jpg";
+import Hero from "../components/hero";
 export default function Performance() {
-  return (
-    <div className="h-screen">
-      <Image
-        src={bjpg}
-        fill
-        style={{
-          objectFit: "cover",
-        }}
-        alt="Your Image Alt Text"
-      />
-    </div>
-  );
+  return <Hero src={bjpg} alt="Performance" content="是个" />;
 }

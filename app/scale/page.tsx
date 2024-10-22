@@ -1,16 +1,5 @@
-import Image from "next/image";
 import djpg from "@/public/d.jpg";
+import Hero from "../components/hero";
 export default function Scale() {
-  return (
-    <div className="h-screen">
-      <Image
-        src={djpg}
-        fill
-        style={{
-          objectFit: "cover",
-        }}
-        alt="Your Image Alt Text"
-      />
-    </div>
-  );
+  return <Hero src={djpg} alt="Scale" content="富帅" />;
 }

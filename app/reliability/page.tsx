@@ -1,16 +1,5 @@
-import Image from "next/image";
 import cjpg from "@/public/c.jpg";
+import Hero from "../components/hero";
 export default function Reliability() {
-  return (
-    <div className="h-screen">
-      <Image
-        src={cjpg}
-        fill
-        style={{
-          objectFit: "cover",
-        }}
-        alt="Your Image Alt Text"
-      />
-    </div>
-  );
+  return <Hero src={cjpg} alt="Reliability" content="高" />;
 }
