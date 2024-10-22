@@ -5,5 +5,5 @@ export const metadata = {
   title: "Performance",
 };
 export default function Performance() {
-  return <Hero src={bjpg} alt="Performance" content="是个" />;
+  return <Hero src={bjpg} alt="Performance" content="是个" sub="shige" />;
 }

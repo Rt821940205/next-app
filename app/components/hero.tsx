@@ -4,6 +4,7 @@ interface IProps {
   src: StaticImageData;
   alt: string;
   content: string;
+  sub: string;
 }
 export default function hero(props: IProps) {
   return (
@@ -20,6 +21,7 @@ export default function hero(props: IProps) {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950"></div>
       </div>
       <div className="flex justify-center pt-48">
+        <h2 className="text-white text-6xl">{props.sub}</h2>
         <h1 className="text-white text-6xl">{props.content}</h1>
       </div>
     </div>
