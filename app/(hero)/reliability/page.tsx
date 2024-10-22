@@ -1,5 +1,5 @@
 import cjpg from "@/public/c.jpg";
-import Hero from "../components/hero";
+import Hero from "../../components/hero";
 
 export const metadata = {
   title: "Reliability",

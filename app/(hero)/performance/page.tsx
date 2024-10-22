@@ -1,5 +1,5 @@
 import bjpg from "@/public/b.jpg";
-import Hero from "../components/hero";
+import Hero from "../../components/hero";
 
 export const metadata = {
   title: "Performance",
