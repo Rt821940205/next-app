@@ -1,27 +1,4 @@
-"use client";
-import React from "react";
-import { Avatar, List } from "antd";
-import { data } from "../data";
-import Link from "next/link";
-
+import BlogList from "../components/blogList";
 export default function Page() {
-  return (
-    <List
-      itemLayout="horizontal"
-      dataSource={data}
-      renderItem={(item, index) => (
-        <List.Item>
-          <List.Item.Meta
-            avatar={
-              <Avatar
-                src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`}
-              />
-            }
-            title={<Link href={`/blog/${item.id}`}>{item.title}</Link>}
-            description={item.content}
-          />
-        </List.Item>
-      )}
-    />
-  );
+  return <BlogList />;
 }
