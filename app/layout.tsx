@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Comforter } from "next/font/google";
-import Header from "./components/header";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.css";
 
 const comforter = Comforter({
@@ -20,10 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={comforter.className}>
-      <body>
-        <Header />
-        {children}
-      </body>
+      <AntdRegistry>
+        <body>{children}</body>
+      </AntdRegistry>
     </html>
   );
 }
